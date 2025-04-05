@@ -66,8 +66,8 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{metadata.title as string}</title> {/* Type assertion added here */}
-        <meta name="description" content={metadata.description} />
+        <title>{metadata.title ?? 'Asma Portfolio'}</title> {/* Default title */}
+        <meta name="description" content={metadata.description ?? ''} />
         <meta name="keywords" content={metadata.keywords.join(', ')} />
         <meta name="creator" content={metadata.creator} />
         <meta name="theme-color" content={metadata.themeColor[0].color} media={metadata.themeColor[0].media} />
@@ -75,8 +75,8 @@ export default function RootLayout({
 
         {/* Open Graph */}
         <meta property="og:type" content={metadata.openGraph.type} />
-        <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:title" content={metadata.openGraph.title ?? 'Asma Portfolio'} />
+        <meta property="og:description" content={metadata.openGraph.description ?? ''} />
         <meta property="og:site_name" content={metadata.openGraph.siteName} />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta property="og:image:width" content={metadata.openGraph.images[0].width.toString()} />
@@ -85,8 +85,8 @@ export default function RootLayout({
 
         {/* Twitter */}
         <meta name="twitter:card" content={metadata.twitter.card} />
-        <meta name="twitter:title" content={metadata.twitter.title} />
-        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:title" content={metadata.twitter.title ?? 'Asma Portfolio'} />
+        <meta name="twitter:description" content={metadata.twitter.description ?? ''} />
         <meta name="twitter:creator" content={metadata.twitter.creator} />
         <meta name="twitter:image" content={metadata.twitter.images} />
 
