@@ -1,57 +1,56 @@
-import Script from 'next/script';
-import { Inter } from 'next/font/google';
-import { Metadata } from 'next';
+import Script from "next/script";
+import { Inter } from "next/font/google";
+import { Metadata } from "next";
 
-import './globals.css';
-import Header from '@/components/layout/header';
-import { Providers } from '@/lib/providers';
-import Footer from '@/components/layout/footer';
+import "./globals.css";
+import Header from "@/components/layout/header";
+import { Providers } from "@/lib/providers";
+import Footer from "@/components/layout/footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
-const title = 'Sagar Shah | Full Stack Developer From Ahmedabad, India.';
-const description =
-  'A passionate full stack developer specializing in React.js and Node.js.';
-const url = 'https://sagarshah.dev';
+const title = "Asma Portfolio";
+const description = ""; // Set description to an empty string to avoid unwanted text
 
 export const metadata: Metadata = {
-  metadataBase: new URL(url),
   title,
-  description,
+  description, // This will ensure no text is displayed below the title
   keywords: [
-    'Frontend Developer',
-    'Full Stack Developer',
-    'React Developer',
-    'Next.js Developer',
+    "Frontend Developer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
   ],
-  creator: 'Sagar Shah',
+  creator: "Asma Siddique",
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   openGraph: {
-    type: 'website',
-    url,
+    type: "website",
     title,
-    description,
+    description, // Ensure description is empty for Open Graph as well
     siteName: title,
     images: [
       {
-        url: '/images/open-graph-asma.PNG',
+        url: "/images/open-graph-asma.PNG", // Ensure this path is correct
+        width: 1200, // Add width and height for better performance
+        height: 630,
+        alt: "Asma Siddique Portfolio Open Graph Image",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title,
-    description,
-    creator: '@shahsagarm',
-    images: '/images/open-graph-sagar.png',
+    description, // Ensure description is empty for Twitter as well
+    creator: "@asma9001", // Add your Twitter handle if available
+    images: "/images/open-graph-asma.PNG",
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
