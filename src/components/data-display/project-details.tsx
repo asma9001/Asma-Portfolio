@@ -6,7 +6,7 @@ type ProjectDetailsProps = ProjectDetailsType;
 
 const ProjectDetails = ({ name, previewImage }: ProjectDetailsProps) => {
   return (
-    <Card className="overflow-hidden rounded-xl  shadow-xl hover:shadow-2xl transition-all duration-500">
+    <Card className="overflow-hidden rounded-xl  shadow-xl hover:shadow-2xl transition-all duration-500" data-aos="flip-left">
       <div className="relative">
         <Image
           src={previewImage}
