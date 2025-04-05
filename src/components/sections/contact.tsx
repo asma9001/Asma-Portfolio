@@ -47,43 +47,17 @@ const ContactSection = () => {
         <div className="self-center">
           <Tag label="Get in touch" />
         </div>
-       <Typography variant="subtitle" className="max-w-xl text-center">
-  {"What’s next? I'm currently available to take on new projects, so feel free to reach out to me about anything that you want me to work on. You can contact anytime."}
-</Typography>
-
+        <Typography variant="subtitle" className="max-w-xl text-center">
+          {
+            "What’s next? I'm currently available to take on new projects, so feel free to reach out to me about anything that you want me to work on. You can contact anytime."
+          }
+        </Typography>
       </div>
 
       <div className="flex flex-col items-center gap-6 md:gap-12">
-        <div className="flex flex-col items-center md:gap-4">
-          <div className="flex items-center gap-4 md:gap-5">
-            <Mail className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`mailto:${email}`}> */}
-            <Typography variant="h2">{email}</Typography>
-            {/* </Link> */}
-            <IconButton
-              size={width && width < 768 ? "md" : "lg"}
-              onClick={() => handleCopyClick(email, "email")}
-              showTooltip={isCopied && copiedValueType === "email"}
-              tooltipText="Copied!"
-            >
-              <Copy />
-            </IconButton>
-          </div>
-          {/* <div className="flex items-center gap-4 md:gap-5">
-           
-            <IconButton
-              size={width && width < 768 ? 'md' : 'lg'}
-              onClick={() => handleCopyClick(phone.replace(' ', ''), 'phone')}
-              showTooltip={isCopied && copiedValueType === 'phone'}
-              tooltipText="Copied!"
-            >
-              <Copy />
-            </IconButton>
-          </div> */}
-        </div>
         <div className="flex flex-col items-center gap-2">
           <Typography className="text-center">
-            You may also find me on these platforms!
+            You can find me on these platforms!
           </Typography>
           <SocialIcons />
         </div>
