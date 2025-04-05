@@ -10,11 +10,10 @@ import Footer from '@/components/layout/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 const title = 'Asma Portfolio';
-const description = ''; // Set description to an empty string to avoid unwanted text
-
+const description = ''; 
 export const metadata: Metadata = {
   title,
-  description, // This will ensure no text is displayed below the title
+  description, 
   keywords: [
     'Frontend Developer',
     'Full Stack Developer',
