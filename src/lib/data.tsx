@@ -1,4 +1,4 @@
-import { Github, Linkedin, Email } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 import LogoHTML from '/public/images/logos/html.jpg';
 import LogoCSS from '/public/images/logos/css.svg';
