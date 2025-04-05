@@ -99,7 +99,8 @@ const SkillsSection = () => {
         {/* Central logo with glow effect - THIS WAS MISSING */}
         <div className="absolute left-1/2 top-1/2 mt-[15%] -translate-x-1/2 -translate-y-1/2">
           <div className="relative z-[1]  flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-r  from-[#DA7C25] to-[#B923E1]  text-white">
-          <Image src={logo} style={{width:"90%",height:"90%"}}/>
+         <Image src={logo} alt="Asma Logo" style={{ width: "90%", height: "90%" }} />
+
           </div>
           <div className="absolute inset-0 rounded-full  opacity-30 blur-2xl"></div>
 
