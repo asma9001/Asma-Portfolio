@@ -26,6 +26,13 @@ import logoDark from "../../../public/images/logos/black-logo.png"; // Import th
 
 const Logo = () => {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // Avoid rendering until mounted
 
   const logoSrc = theme === "light" ? logoDark : logoLight;
 
@@ -39,6 +46,7 @@ const Logo = () => {
     />
   );
 };
+
 
 const Header = () => {
   const scrolled = useScroll(40);
