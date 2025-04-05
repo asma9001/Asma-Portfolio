@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: title,
     images: [
       {
-        url: '/images/open-graph-asma.png',
+        url: '/images/open-graph-asma.PNG',
       },
     ],
   },
