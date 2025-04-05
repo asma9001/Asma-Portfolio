@@ -79,7 +79,7 @@ export default function Home() {
           <h2 className="mb-4 text-xl font-bold md:text-4xl">
             Full Stack Developer
           </h2>
-          <div className="mt-8 max-w-2xl space-y-4 text-gray-600">
+          <div className="mt-8 max-w-2xl space-y-4 text-gray-600" data-aos="fade-up">
             <p>
               A passionate MERN stack developer, specializing in MongoDB,
               Express, React, and Node.js for 2+ years.
@@ -93,7 +93,7 @@ export default function Home() {
 
         <button
           onClick={scrollToContact}
-          className="mt-6 rounded-xl border-white bg-gradient-to-r from-[#DA7C25] to-[#B923E1] px-6 py-3 text-white transition hover:border hover:bg-gray-800"
+          className="mt-6 rounded-xl border-white bg-gradient-to-r from-[#DA7C25] to-[#B923E1] px-6 py-3 text-white transition hover:border hover:bg-gray-800" data-aos="fade-up"
         >
           Contact Me
         </button>
