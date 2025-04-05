@@ -38,11 +38,12 @@ export default function Home() {
 
           <div className="mt-4 flex flex-col items-center md:mt-10 md:items-start">
             <div className="relative text-xl">
-              <p className="mb-1 font-bold text-gray-600">
-                Hi! I'm{" "}
-                <span className="font-bold text-gray-600">Asma Siddique</span>
-                <span className="inline-block animate-waving-hand">👋</span>
-              </p>
+           <p className="mb-1 font-bold text-gray-600">
+  Hi! I&apos;m{" "}
+  <span className="font-bold text-gray-600">Asma Siddique</span>
+  <span className="inline-block animate-waving-hand">👋</span>
+</p>
+
               <h2 className="mt-2 text-xl font-semibold   bg-gradient-to-r from-purple-500 via-rose-500 to-orange-500 text-transparent bg-clip-text md:text-2xl">
                 <Typewriter
                   words={[
