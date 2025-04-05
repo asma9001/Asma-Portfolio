@@ -4,14 +4,14 @@ export default function AboutMeSection() {
     <section className="min-h-screen bg-gray-100 px-4 py-20" id="about">
       <div className="mx-auto max-w-4xl">
         {/* About Me Header */}
-        <div className="mb-16 flex justify-center">
+        <div className="mb-16 flex justify-center" data-aos="fade-up">
           <div className="self-center">
             <Tag label="About me" />
           </div>
         </div>
 
         {/* About Text */}
-        <div className="mb-16">
+        <div className="mb-16" data-aos="fade-up">
           <p className="mx-auto max-w-2xl text-center text-gray-800">
             I’m a Full Stack Developer specializing in the MERN stack, with
             expertise in React.js, Node.js, Express.js, and MongoDB, passionate
@@ -22,20 +22,23 @@ export default function AboutMeSection() {
             I developed a strong foundation in problem-solving, data structures,
             and web development. Beyond coding, I enjoy exploring new
             technologies, experimenting with emerging frameworks, and optimizing
-            performance in web applications.I love coding and exploring new
+            performance in web applications. I love coding and exploring new
             technologies while enjoying a good cup of coffee.
           </p>
         </div>
 
         {/* Explore Button */}
-        <div className="mb-16 flex justify-center">
+        <div className="mb-16 flex justify-center" data-aos="fade-up">
           <button className="border-l border-r border-black px-8 py-2 text-sm tracking-widest">
             EXPLORE
           </button>
         </div>
 
         {/* Divider */}
-        <div className="mb-20 flex items-center justify-center">
+        <div
+          className="mb-20 flex items-center justify-center"
+          data-aos="fade-up"
+        >
           <div className="h-px w-12 bg-black"></div>
           <div className="mx-2">
             <svg
@@ -55,7 +58,10 @@ export default function AboutMeSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+        <div
+          className="grid grid-cols-1 gap-12 md:grid-cols-2"
+          data-aos="fade-up"
+        >
           {/* Design */}
           <div className="flex flex-col items-center">
             <div className="mb-4 opacity-20">
@@ -88,7 +94,7 @@ export default function AboutMeSection() {
           </div>
 
           {/* Development */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center" data-aos="fade-up">
             <div className="mb-4 opacity-20">
               <svg
                 width="48"
@@ -123,7 +129,7 @@ export default function AboutMeSection() {
           </div>
 
           {/* Maintenance */}
-          <div className="mt-8 flex flex-col items-center md:col-span-2 md:mt-16">
+          <div className="mt-8 flex flex-col items-center md:col-span-2 md:mt-16" data-aos="fade-up">
             <div className="mb-4 opacity-20">
               <svg
                 width="48"
