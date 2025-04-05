@@ -47,11 +47,10 @@ const ContactSection = () => {
         <div className="self-center">
           <Tag label="Get in touch" />
         </div>
-        <Typography variant="subtitle" className="max-w-xl text-center">
-          What’s next? I'm currently avaliable to take on new projects, so feel
-          free to reach out to me about anything that you want me to work on.
-          You can contact anytime.
-        </Typography>
+       <Typography variant="subtitle" className="max-w-xl text-center">
+  {"What’s next? I'm currently available to take on new projects, so feel free to reach out to me about anything that you want me to work on. You can contact anytime."}
+</Typography>
+
       </div>
 
       <div className="flex flex-col items-center gap-6 md:gap-12">
