@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 const title = 'Sagar Shah | Full Stack Developer From Ahmedabad, India.';
 const description =
-  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Ahmedabad, India.';
+  'A passionate full stack developer specializing in React.js and Node.js.';
 const url = 'https://sagarshah.dev';
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: title,
     images: [
       {
-        url: '/images/open-graph-sagar.png',
+        url: '/images/open-graph-asma.PNG',
       },
     ],
   },
