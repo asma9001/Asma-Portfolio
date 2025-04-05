@@ -10,11 +10,11 @@ import Footer from '@/components/layout/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 const title = 'Asma Portfolio';
-const description = ''; // Set description to an empty string to avoid unwanted text
+const description = 'A portfolio website showcasing the work and skills of Asma Siddique, a Frontend Developer specializing in React and Next.js.'; // Set description to avoid unwanted text
 
 export const metadata: Metadata = {
   title,
-  description, // This will ensure no text is displayed below the title
+  description, // This ensures the description is displayed correctly
   keywords: [
     'Frontend Developer',
     'Full Stack Developer',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     title,
-    description, // Ensure description is empty for Open Graph as well
+    description, // Ensure description is set for Open Graph
     siteName: title,
     images: [
       {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title,
-    description, // Ensure description is empty for Twitter as well
+    description, // Ensure description is set for Twitter
     creator: '@asma9001', // Add your Twitter handle if available
     images: '/images/open-graph-asma.PNG',
   },
