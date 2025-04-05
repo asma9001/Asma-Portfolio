@@ -191,18 +191,40 @@ export const EXPERIENCES: ExperienceDetails[] = [
 ];
 
 export const PROJECTS: ProjectDetails[] = [
-  {
-    
+{
+    name: 'Perfume Website',
+    description:
+      'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
+    url: 'https://pepehousing.com',
     previewImage: Project1,
-    
+    technologies: [
+      'React',
+      'Next.js',
+      'Typescript',
+      'Tailwindcss',
+      'Redux Toolkit',
+      'React Query',
+      'Storybook',
+    ],
   },
-  {
-   
+{
+    name: 'Fajilabs',
+    description:
+      'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
+    url: 'https://pepehousing.com',
     previewImage: Project2,
-   
+    technologies: [
+      'React',
+      'Next.js',
+      'Typescript',
+      'Tailwindcss',
+      'Redux Toolkit',
+      'React Query',
+      'Storybook',
+    ],
   },
   {
-    name: 'Pepehousing',
+    name: 'Trendbost',
     description:
       'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
     url: 'https://pepehousing.com',
