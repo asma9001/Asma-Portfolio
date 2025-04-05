@@ -66,7 +66,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{metadata.title}</title>
+        <title>{metadata.title as string}</title> {/* Type assertion added here */}
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords.join(', ')} />
         <meta name="creator" content={metadata.creator} />
