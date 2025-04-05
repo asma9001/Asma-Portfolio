@@ -1,56 +1,57 @@
-import Script from "next/script";
-import { Inter } from "next/font/google";
-import { Metadata } from "next";
+import Script from 'next/script';
+import { Inter } from 'next/font/google';
+import { Metadata } from 'next';
 
-import "./globals.css";
-import Header from "@/components/layout/header";
-import { Providers } from "@/lib/providers";
-import Footer from "@/components/layout/footer";
+import './globals.css';
+import Header from '@/components/layout/header';
+import { Providers } from '@/lib/providers';
+import Footer from '@/components/layout/footer';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
-const title = "Asma Portfolio";
-const description = "A passionate full stack developer specializing in React.js and Node.js.";
+const title = 'Sagar Shah | Full Stack Developer From Ahmedabad, India.';
+const description =
+  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Ahmedabad, India.';
+const url = 'https://sagarshah.dev';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(url),
   title,
   description,
   keywords: [
-    "Frontend Developer",
-    "Full Stack Developer",
-    "React Developer",
-    "Next.js Developer",
+    'Frontend Developer',
+    'Full Stack Developer',
+    'React Developer',
+    'Next.js Developer',
   ],
-  creator: "Asma Siddique",
+  creator: 'Sagar Shah',
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
   openGraph: {
-    type: "website",
+    type: 'website',
+    url,
     title,
     description,
     siteName: title,
     images: [
       {
-        url: "/images/open-graph-asma.PNG", // Update this path to your new Open Graph image
-        width: 1200,
-        height: 630,
-        alt: "Asma Siddique Portfolio Open Graph Image",
+        url: '/images/open-graph-sagar.png',
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
     title,
     description,
-    creator: "@asma9001",
-    images:  "/images/open-graph-asma.PNG", // Update this path to your new Twitter image
+    creator: '@shahsagarm',
+    images: '/images/open-graph-sagar.png',
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
   },
 };
 
@@ -89,4 +90,3 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
