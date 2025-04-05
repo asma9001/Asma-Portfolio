@@ -1,4 +1,4 @@
-eeq5y"use client";
+"use client";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes"; // Import theme hook
 import Image from "next/image";
