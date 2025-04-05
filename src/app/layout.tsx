@@ -10,44 +10,42 @@ import Footer from '@/components/layout/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 const title = 'Asma Portfolio';
-const description =
-  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Ahmedabad, India.';
-const url = 'https://sagarshah.dev';
+
 
 export const metadata: Metadata = {
-  metadataBase: new URL(url),
+
   title,
-  description,
+
   keywords: [
     'Frontend Developer',
     'Full Stack Developer',
     'React Developer',
     'Next.js Developer',
   ],
-  creator: 'Sagar Shah',
+  creator: 'Asma Siddique',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
   openGraph: {
     type: 'website',
-    url,
+   
     title,
-    description,
+    
     siteName: title,
     images: [
       {
-        url: '/images/open-graph-sagar.png',
+        url: '/images/open-graph-asma.png',
       },
     ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title,
-    description,
-    creator: '@shahsagarm',
-    images: '/images/open-graph-sagar.png',
-  },
+  // twitter: {
+  //   card: 'summary_large_image',
+  //   title,
+  //   description,
+  //   creator: '@shahsagarm',
+  //   images: '/images/open-graph-sagar.png',
+  // },
   // icons: {
   //   icon: '/favicon.ico',
   //   shortcut: '/favicon-16x16.png',
