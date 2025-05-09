@@ -33,7 +33,7 @@ import Project1 from "/public/images/project1.png";
 import Project2 from "/public/images/fajilabs.jpeg";
 import Project3 from "/public/images/trendbost.webp";
 import Project4 from "/public/images/recipe-finder-app.png";
-import Project5 from "/public/images/design.png";
+import Project5 from "/public/images/Design.png";
 // import ProjectPepehousing from '/public/images/project-pepehousing.png';
 
 import AvatarKrisztian from "/public/images/avatar-krisztian.png";
