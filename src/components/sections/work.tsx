@@ -91,7 +91,7 @@ const WorkSection = () => {
               {selectedProject.previewImage && (
                 <Image
                   src={selectedProject.previewImage}
-                  alt={selectedProject.title}
+                  alt={selectedProject.name}
                   className="max-h-80 w-full rounded-lg object-cover"
                 />
               )}
