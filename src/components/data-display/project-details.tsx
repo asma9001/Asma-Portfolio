@@ -1,21 +1,27 @@
-import Image from "next/image";
-import { ProjectDetails as ProjectDetailsType } from "@/lib/types";
-import Card from "@/components/layout/card";
+import Image, { StaticImageData } from 'next/image';
 
-type ProjectDetailsProps = ProjectDetailsType;
-
-const ProjectDetails = ({ name, previewImage }: ProjectDetailsProps) => {
+// Ensure the previewImage is handled correctly based on its type
+const ProjectDetails = ({ name, description, previewImage, technologies, link }: Project) => {
   return (
-    <Card className="overflow-hidden rounded-xl  shadow-xl hover:shadow-2xl transition-all duration-500" data-aos="flip-left">
-      <div className="relative">
+    <div>
+      {/* Use next/image for previewImage */}
+      {typeof previewImage === 'string' ? (
         <Image
           src={previewImage}
-          alt={`${name} preview`}
-          className="w-full h-[220px] object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+          alt={name}
+          className="max-h-80 w-full rounded-lg object-cover"
+          width={500} // Example width
+          height={300} // Example height
         />
-      </div>
-    </Card>
+      ) : (
+        <Image
+          src={previewImage as StaticImageData} // Ensure it's treated as StaticImageData if it's not a string
+          alt={name}
+          className="max-h-80 w-full rounded-lg object-cover"
+          width={500}
+          height={300}
+        />
+      )}
+    </div>
   );
 };
-
-export default ProjectDetails;
