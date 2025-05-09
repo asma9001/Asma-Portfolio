@@ -111,25 +111,25 @@ const WorkSection = () => {
               </p>
 
               {/* Technologies */}
-              {selectedProject.technologies?.length > 0 && (
-                <div>
-                  <h3 className="mb-2 text-lg font-semibold text-gray-800">
-                    Technologies Used
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedProject.technologies.map(
-                      (tech: string, index: number) => (
-                        <span
-                          key={index}
-                          className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-800"
-                        >
-                          {tech}
-                        </span>
-                      )
-                    )}
-                  </div>
-                </div>
-              )}
+           {/* Technologies */}
+{Array.isArray(selectedProject.technologies) && selectedProject.technologies.length > 0 && (
+  <div>
+    <h3 className="mb-2 text-lg font-semibold text-gray-800">
+      Technologies Used
+    </h3>
+    <div className="flex flex-wrap gap-2">
+      {selectedProject.technologies.map((tech: string, index: number) => (
+        <span
+          key={index}
+          className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-800"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+  </div>
+)}
+
 
               {/* Visit Link */}
               {selectedProject.link && (
