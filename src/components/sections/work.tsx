@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { PROJECTS } from "@/lib/data";
 import ProjectDetails from "@/components/data-display/project-details";
@@ -13,11 +11,21 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+// Define the type for a Project object
+type Project = {
+  name: string;
+  description: string;
+  previewImage?: string;
+  technologies?: string[];
+  link?: string;
+};
+
 const WorkSection = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  // Explicitly define selectedProject as a Project or null
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleCardClick = (project: any) => {
+  const handleCardClick = (project: Project) => {
     setSelectedProject(project);
     setIsOpen(true);
   };
