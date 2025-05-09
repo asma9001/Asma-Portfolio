@@ -6,6 +6,7 @@ import Typography from "@/components/general/typography";
 import Container from "@/components/layout/container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import { StaticImageData } from "next/image";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,7 +16,7 @@ import "swiper/css/navigation";
 type Project = {
   name: string;
   description: string;
-  previewImage?: string;
+  previewImage?: string | StaticImageData; // Allow both string (URL) and StaticImageData
   technologies?: string[];
   link?: string;
 };
